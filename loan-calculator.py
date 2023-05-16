@@ -13,8 +13,8 @@ parser.add_argument("--payment", help="You need to add the monthly payment amoun
 
 args = parser.parse_args()
 
-def overpayment(yourPayment, principal, periods):
-    return (yourPayment * periods) - principal
+def overpayment(your_payment, principal, periods):
+    return (your_payment * periods) - principal
 
 num_arguments_provided = sum(arg is not None for arg in vars(args).values())
 # check for incorrect parameters
